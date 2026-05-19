@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Student ID: 202018013">
 
-<title>TDS – MSc Transport Planning and Environment Portfolio</title>
+<title>TRAN5340M: Transport Data Science Report</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,124 +21,180 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
-
-
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
   }
-}</script>
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
+
+<script src="TRAN5340M_202018013_files/libs/clipboard/clipboard.min.js"></script>
+<script src="TRAN5340M_202018013_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="TRAN5340M_202018013_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="TRAN5340M_202018013_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="TRAN5340M_202018013_files/libs/quarto-html/popper.min.js"></script>
+<script src="TRAN5340M_202018013_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="TRAN5340M_202018013_files/libs/quarto-html/anchor.min.js"></script>
+<link href="TRAN5340M_202018013_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="TRAN5340M_202018013_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="TRAN5340M_202018013_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="TRAN5340M_202018013_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="TRAN5340M_202018013_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="TRAN5340M_202018013_files/libs/kePrint-0.0.1/kePrint.js"></script>
+
+<link href="TRAN5340M_202018013_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="quarto-light">
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">MSc Transport Planning and Environment Portfolio</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text"></span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
-        <li>
-    <a class="dropdown-item" href="../shaping/shaping.html">
- <span class="dropdown-text">Shaping Future Transport Systems</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../data-science/TDS.html">
- <span class="dropdown-text">Transport Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../spatial-planning/sspa.qmd">
- <span class="dropdown-text">Sustainable Spatial Planning and Analysis</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#tran5340m-coversheet" id="toc-tran5340m-coversheet" class="nav-link active" data-scroll-target="#tran5340m-coversheet">TRAN5340M Coversheet</a></li>
+  <li><a href="#sec-intro" id="toc-sec-intro" class="nav-link" data-scroll-target="#sec-intro"><span class="header-section-number">1</span> Introduction</a>
+  <ul class="collapse">
+  <li><a href="#sec-1-1" id="toc-sec-1-1" class="nav-link" data-scroll-target="#sec-1-1"><span class="header-section-number">1.1</span> Background and context</a></li>
+  <li><a href="#sec-1-2" id="toc-sec-1-2" class="nav-link" data-scroll-target="#sec-1-2"><span class="header-section-number">1.2</span> Aims and objectives</a></li>
+  <li><a href="#sec-1-3" id="toc-sec-1-3" class="nav-link" data-scroll-target="#sec-1-3"><span class="header-section-number">1.3</span> Research Questions</a></li>
+  </ul></li>
+  <li><a href="#sec-study-area" id="toc-sec-study-area" class="nav-link" data-scroll-target="#sec-study-area"><span class="header-section-number">2</span> Study area and data</a>
+  <ul class="collapse">
+  <li><a href="#sec-2-1" id="toc-sec-2-1" class="nav-link" data-scroll-target="#sec-2-1"><span class="header-section-number">2.1</span> Data review</a></li>
+  <li><a href="#sec-2-2" id="toc-sec-2-2" class="nav-link" data-scroll-target="#sec-2-2"><span class="header-section-number">2.2</span> Definition of the study area</a></li>
+  </ul></li>
+  <li><a href="#sec-method" id="toc-sec-method" class="nav-link" data-scroll-target="#sec-method"><span class="header-section-number">3</span> Methodology</a>
+  <ul class="collapse">
+  <li><a href="#sec-3-1" id="toc-sec-3-1" class="nav-link" data-scroll-target="#sec-3-1"><span class="header-section-number">3.1</span> High-resolution routing - <code>r5r</code></a></li>
+  <li><a href="#sec-3-2" id="toc-sec-3-2" class="nav-link" data-scroll-target="#sec-3-2"><span class="header-section-number">3.2</span> Measuring accessibility</a></li>
+  <li><a href="#sec-3-3" id="toc-sec-3-3" class="nav-link" data-scroll-target="#sec-3-3"><span class="header-section-number">3.3</span> Assumptions for the accessibility index</a></li>
+  <li><a href="#sec-3-4" id="toc-sec-3-4" class="nav-link" data-scroll-target="#sec-3-4"><span class="header-section-number">3.4</span> Socio-economic aggregation</a></li>
+  </ul></li>
+  <li><a href="#sec-results-1" id="toc-sec-results-1" class="nav-link" data-scroll-target="#sec-results-1"><span class="header-section-number">4</span> Results: Spatial accessibility</a>
+  <ul class="collapse">
+  <li><a href="#sec-4-1" id="toc-sec-4-1" class="nav-link" data-scroll-target="#sec-4-1"><span class="header-section-number">4.1</span> Active travel accessibility</a></li>
+  <li><a href="#sec-4-2" id="toc-sec-4-2" class="nav-link" data-scroll-target="#sec-4-2"><span class="header-section-number">4.2</span> Public transport accessibility</a></li>
+  <li><a href="#sec-4-3" id="toc-sec-4-3" class="nav-link" data-scroll-target="#sec-4-3"><span class="header-section-number">4.3</span> Identification of inaccessible areas</a></li>
+  </ul></li>
+  <li><a href="#sec-results-2" id="toc-sec-results-2" class="nav-link" data-scroll-target="#sec-results-2"><span class="header-section-number">5</span> Results: Socio-economic equity</a>
+  <ul class="collapse">
+  <li><a href="#sec-5-1" id="toc-sec-5-1" class="nav-link" data-scroll-target="#sec-5-1"><span class="header-section-number">5.1</span> Accessibility by deprivation</a></li>
+  <li><a href="#sec-5-2" id="toc-sec-5-2" class="nav-link" data-scroll-target="#sec-5-2"><span class="header-section-number">5.2</span> Evaluating the transport social exclusion</a></li>
+  </ul></li>
+  <li><a href="#sec-discussion" id="toc-sec-discussion" class="nav-link" data-scroll-target="#sec-discussion"><span class="header-section-number">6</span> Discussion and conclusions</a>
+  <ul class="collapse">
+  <li><a href="#sec-6-1" id="toc-sec-6-1" class="nav-link" data-scroll-target="#sec-6-1"><span class="header-section-number">6.1</span> Synthesis of findings</a></li>
+  <li><a href="#sec-6-2" id="toc-sec-6-2" class="nav-link" data-scroll-target="#sec-6-2"><span class="header-section-number">6.2</span> Methodological limitations</a></li>
+  <li><a href="#sec-6-3" id="toc-sec-6-3" class="nav-link" data-scroll-target="#sec-6-3"><span class="header-section-number">6.3</span> Policy recommendations</a></li>
+  </ul></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
-<!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">TDS</h1>
+<h1 class="title">TRAN5340M: Transport Data Science Report</h1>
+<p class="subtitle lead">Coursework submission</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Student ID: 202018013 </p>
+          </div>
+  </div>
     
   
     
@@ -148,10 +205,571 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div style="page-break-after: always;"></div>
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="logo.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img" width="282"></p>
+</figure>
+</div>
+<section id="tran5340m-coversheet" class="level1 unnumbered">
+<h1 class="unnumbered">TRAN5340M Coversheet</h1>
+</section>
+<section id="module-name-transport-data-science" class="level1 unlisted unnumbered">
+<h1 class="unlisted unnumbered">Module Name: Transport Data Science</h1>
+<hr>
+<p><strong>Assignment title:</strong> Coursework Report</p>
+<p><strong>Student ID:</strong> 202018013</p>
+<p><strong>Word count:</strong> 3,220 words</p>
+<p><strong>Lecturer:</strong> Dr.&nbsp;Robin Lovelace</p>
+<p><strong>Submission Date:</strong> May 15th, 2026</p>
+<p><strong>Semester:</strong> Semester 2</p>
+<p><strong>Academic Year:</strong> 2025/2026</p>
+<p><strong>Generative AI Category:</strong> Green</p>
+<hr>
+<p>Use of Generative Artificial Intelligence (Gen AI) in this assessment – mark one box as appropriate:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox">I have made no use of Gen AI</label></p></li>
+<li><p><label><input type="checkbox" checked="">I have used Gen AI as outlined in my acknowledgements (encouraged for this module)</label></p></li>
+</ul>
+<hr>
+<p>By submitting the work to which this sheet is attached you confirm your compliance with the University’s definition of Academic Integrity as: “a commitment to good study practices and shared values which ensures that my work is a true expression of my own understanding and ideas, giving credit to others where their work contributes to mine”. Double-check that your referencing and use of quotations is consistent with this commitment.</p>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="a-spatial-analysis-of-the-20-minute-city-strategy-in-cambridge" class="level1 unlisted unnumbered">
+<h1 class="unlisted unnumbered">A spatial analysis of the 20-minute city strategy in Cambridge</h1>
+</section>
+<section id="sec-intro" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<section id="sec-1-1" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="sec-1-1"><span class="header-section-number">1.1</span> Background and context</h2>
+<p>In 2023, Cambridgeshire County Council established an active travel strategy that aim to achieve net zero carbon emissions by 2045 <span class="citation" data-cites="cambridgeshire_strategy">(<a href="#ref-cambridgeshire_strategy" role="doc-biblioref">Cambridgeshire County Council, 2023</a>)</span>. The strategy aligns with the 15-minute city framework, where cities need to ‘adopt urban planning mechanisms to ensure that quality of life is preserved’ <span class="citation" data-cites="moreno2021">(<a href="#ref-moreno2021" role="doc-biblioref">Moreno et al., 2021, 97</a>)</span> Therefore, the strategy has the goal to develop compact, dense and diverse neighbourhoods where residents can access the essential opportunities (such as healthcare, education, amenities and leisure) by active travel and public transport modes <span class="citation" data-cites="cervero1997">(<a href="#ref-cervero1997" role="doc-biblioref">Cervero and Kockelman, 1997</a>)</span>. Cambridge has adopted these concepts to its specific spatial and socio-economic context and set a target to become a 20-minute active travel city.</p>
+</section>
+<section id="sec-1-2" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="sec-1-2"><span class="header-section-number">1.2</span> Aims and objectives</h2>
+<p>This report aims to evaluate the spatial and socio-economic equity impacts of the 20-minute active travel strategy within the urban and peri-urban areas of Cambridge <span class="citation" data-cites="cambridgeshire_strategy">(<a href="#ref-cambridgeshire_strategy" role="doc-biblioref">Cambridgeshire County Council, 2023</a>)</span>. Therefore, this study adopts a 20-minute approach for the spatial accessibility analysis to examine the following objectives:</p>
+<ul>
+<li><p><strong>Develop a multimodal routing engine:</strong> Using the <code>r5r</code> package to build a detailed network system to measure the accessibility across three different modes: walking, cycling and public transport.</p></li>
+<li><p><strong>Identify the inacessibility areas:</strong> Isolate the areas where residents cannot reach essential Points of Interest (POIs), such as healthcare, education, amenities and leisure; therefore, analyse the accessibility scores that fall bellow a defined essential threshold.</p></li>
+<li><p><strong>Evaluate the social exclusion:</strong> Analyse the correlation between the aggregated transport accessibility and the social exclusion from the Index of Multiple Deprivation (IMD) for the Lower Super Output Areas (LSOAs) boundaries.</p></li>
+</ul>
+</section>
+<section id="sec-1-3" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="sec-1-3"><span class="header-section-number">1.3</span> Research Questions</h2>
+<p>To address the aims and objectives defined above, this report is structured to answer the following three primary research questions:</p>
+<p><strong>RQ01 - Spatial accessibility:</strong> How does the 20-minute accessibility to essential POIs (healthcare, education, amenities and leisure) vary accross Cambridge while comparing walking, cycling and public transport modes in the city?</p>
+<p><strong>RQ02 - Spatial exclusion:</strong> Where are the primary inaccessible areas located? And why do these ‘transport deserts’ areas fail to provide proper accessibility within the 20-minute threshold to the residents?</p>
+<p><strong>RQ03 - Socio-economic equity:</strong> To what extent does the transport spatial and social exclusion affect the most vulnerable residents, analysed at the LSOA level?</p>
+</section>
+</section>
+<section id="sec-study-area" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Study area and data</h1>
+<section id="sec-2-1" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-2-1"><span class="header-section-number">2.1</span> Data review</h2>
+<p>As part of the framework of this report, several datasets were collected to build the routing engine network, and to conduct the accessibility analysis. Therefore, open-source datasets were integrated guided by the specific requirements of the <code>r5r</code> package. The following datasets were collected and processed for this study:</p>
+<ul>
+<li><strong>OpenStreetMap (OSM) network and POIs:</strong> The detailed network data (such as public transport lines, stops, active travel network and POIs) of Cambridgeshire was extracted using the <code>osmextract</code> package <span class="citation" data-cites="osmextract">(<a href="#ref-osmextract" role="doc-biblioref">Gilardi and Lovelace, 2025</a>)</span>. Additionally, the POIs were categorised into four main types: healthcare, education, amenities (supermarket) and leisure, to be used as the opportunities in the accessibility analysis, and were extracted from OSM, both polygon and point layers.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the .pbf OSM data for Cambridge using the osmextract package</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>r5r_path <span class="ot">&lt;-</span> <span class="st">"r5r/cambridge_network"</span>   <span class="co"># Required for r5r setup</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(r5r_path)) {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(r5r_path, <span class="at">recursive =</span> <span class="cn">TRUE</span>)}</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">oe_get</span>(<span class="st">"Cambridge"</span>, <span class="at">provider =</span> <span class="st">"bbbike"</span>, <span class="at">download_directory =</span> r5r_path)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ul>
+<li><p><strong>Topographical data (raster elevation):</strong> To ensure a more accurate active travel routing and accessibility analysis, the digital elevation model (DEM) for the study area was downloaded using the <code>elevatr</code> package <span class="citation" data-cites="elevatr">(<a href="#ref-elevatr" role="doc-biblioref">Hollister et al., 2025</a>)</span>. This dataset captures the topographical variations across Cambridge and allows the routing engine from <code>r5r</code> to adjust the impact of terrain on active travel modes, such as walking and cycling.</p></li>
+<li><p><strong>Public transport network and schedules:</strong> The General Transit Feed Specification (GTFS) data for the East Anglia region (includes the Cambridge area) was downloaded from the Bus Open Data Service (BODS) portal <span class="citation" data-cites="gtfs_data">(<a href="#ref-gtfs_data" role="doc-biblioref">Bus Open Data Service, 2026</a>)</span>, which provides detailed information on public transport routes, stops, and schedules. This dataset is essential for building the public transport network in the <code>r5r</code> routing package and along with the <code>tidytransit</code> package <span class="citation" data-cites="tidytransit">(<a href="#ref-tidytransit" role="doc-biblioref">Poletti et al., 2026</a>)</span>, this dataset provides the recent layout of the public transport (PT) network.</p></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The data from Cambridge was downloaded from BODS for East Anglia region</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>bods_url <span class="ot">&lt;-</span> <span class="st">"https://github.com/german-sulca/tds-coursework-data/releases/download/bods_v1_06-05-26/east_anglia_gtfs.zip"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># To manually download the dataset is required to create an account in the BODS portal</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>gtfs_path <span class="ot">&lt;-</span> <span class="st">"r5r/cambridge_network/east_anglia_gtfs.zip"</span>    <span class="co"># Rrequired for r5r setup</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Assisted with AI</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">download.file</span>(<span class="at">url =</span> bods_url, <span class="at">destfile =</span> gtfs_path, <span class="at">method =</span> <span class="st">"libcurl"</span>, <span class="at">mode =</span> <span class="st">"wb"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ul>
+<li><strong>Administrative boundaries (LSOA level):</strong> The 2021 boundaries for the LSOAs in England and Wales <span class="citation" data-cites="lsoaboundaries">(<a href="#ref-lsoaboundaries" role="doc-biblioref">Office for National Statistics, 2024</a>)</span> were downloaded using the <code>arcgislayers</code> package <span class="citation" data-cites="arcgislayers">(<a href="#ref-arcgislayers" role="doc-biblioref">Parry, 2026</a>)</span>, which provides access to the ArcGIS REST API. This dataset is essential for the aggregation analysis of the accessibility scores at the LSOA level and analysing the socio-economic equity of transport accessibility across different areas.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If the LSOA boundaries fail to download, replace with the following code chunk:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>uk_boundaries <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"https://github.com/german-sulca/tds-coursework-data/releases/download/sf/uk_boundaries.geojson"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(FID, LSOA21CD, geometry)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Socio-economic dataset (IMD and population):</strong> The 2025 IMD deciles <span class="citation" data-cites="imd_data">(<a href="#ref-imd_data" role="doc-biblioref">Ministry of Housing Communities and Local Government, 2025</a>)</span> and the 2024 population estimates <span class="citation" data-cites="population_data">(<a href="#ref-population_data" role="doc-biblioref">Office for National Statistics, 2025</a>)</span> for the LSOAs were downloaded from the UK government websites, respectively. The IMD deciles are used to analyse the correlation between the 20-minute accessibility and social deprivation in Cambridge, while the population data allows for a more detailed analysis of the accessibility levels experienced by different population groups across the study area at a LSOA level.</li>
+</ul>
+</section>
+<section id="sec-2-2" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-2-2"><span class="header-section-number">2.2</span> Definition of the study area</h2>
+<p>The study area for the scope of this report is defined as the urban and peri-urban areas of Cambridge to analise the accessibility of the 20-minute active travel strategy in the city. Then, the proper study area is defined as the LSOAs that rely within a 5km buffer around the geometric centre of Cambridge to capture the areas that are within a reasonable distance from the city centre, and where most of the population and essential services are located.</p>
+<p>To execute a high-resolution accessibility analysis using the <code>r5r</code> package, a hexagonal grid with a cell size of 100 meters was created across the study area <span class="citation" data-cites="tfl_ptal">(<a href="#ref-tfl_ptal" role="doc-biblioref">Transport for London, 2015</a>)</span>. The centroids of these hexagons were used as the origins for the accessibility analysis, providing a detailed spatial representation of accessibility levels across Cambridge.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the hexagonal grid with a cell size of 100 meters</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>hex_grid <span class="ot">&lt;-</span> <span class="fu">st_make_grid</span>(study_boundary, <span class="at">cellsize =</span> <span class="dv">100</span>, <span class="at">square =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_sf</span>() <span class="sc">%&gt;%</span>    <span class="co"># Use of '%&gt;%' pipeline only for this section</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">id =</span> <span class="fu">row_number</span>()) <span class="sc">|&gt;</span>    <span class="co"># Create a unique ID for each hexagon</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">st_intersects</span>(geometry, study_boundary, <span class="at">sparse =</span> <span class="cn">FALSE</span>))</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>hex_origins <span class="ot">&lt;-</span> hex_grid <span class="sc">|&gt;</span> </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_centroid</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_transform</span>(<span class="dv">4326</span>)    <span class="co"># Transform to EPSG:4326 projection (required for r5r package)</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">st_write</span>(hex_origins, <span class="st">"r5r/cambridge_origins.geojson"</span>, <span class="at">delete_dsn =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The integration of the detailed datasets presented in <a href="#sec-2-1" class="quarto-xref">Section&nbsp;2.1</a> is illustrated in the following figure (see <a href="#fig-study-area" class="quarto-xref">Figure&nbsp;1</a>). The map shows the study area with the LSOA boundaries, the public transport stops, and the public transport network, from the GTFS dataset, providing a visual representation of the spatial context for the accessibility analysis, such as the radial structure of Cambridge PT network. This visualisation establishes the context for the following sections, where the accessibility analysis is conducted, and the results are presented and discussed.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-study-area" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-study-area-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="TRAN5340M_202018013_files/figure-html/fig-study-area-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-study-area-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Study area with the LSOA boundaries, PT stops, and PT lines
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-method" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Methodology</h1>
+<section id="sec-3-1" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-3-1"><span class="header-section-number">3.1</span> High-resolution routing - <code>r5r</code></h2>
+<p>To calculate the 20-minute accessibility across Cambridge, this study used the <code>r5r</code> package <span class="citation" data-cites="pereira2021a">(<a href="#ref-pereira2021a" role="doc-biblioref">Pereira et al., 2021</a>)</span>, which provides a multimodal routing engine through the <code>r5r::build_network()</code> function that can integrate spatial datasets, such as GTFS for public transport, elevation DEM data for active travel modes, and detailed OSM built network. Moreover, the <code>r5r</code> package allowed the calculation of accessibility metrics, through the <code>r5r::accessibility()</code> function, based on travel time thresholds, essential tool for the present study. The following steps outline the methodology for setting up the routing engine and calculating accessibility scores:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up the r5r routing engine using the GTFS, elevation, OSM network, and study area data</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>r5r_network <span class="ot">&lt;-</span> <span class="fu">build_network</span>(<span class="at">data_path =</span> r5r_path, <span class="at">verbose =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>origins <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"r5r/cambridge_origins.geojson"</span>)    <span class="co"># Hexagonal grid centroids</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>destinations <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"r5r/cambridge_POIs.geojson"</span>)  <span class="co"># POIs points</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>departure_datetime <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(<span class="st">"13-05-2026 08:30:00"</span>, <span class="at">format =</span> <span class="st">"%d-%m-%Y %H:%M:%S"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The accessibility measured used the hexagon centroids defined in <a href="#sec-2-2" class="quarto-xref">Section&nbsp;2.2</a> as origins, and the POIs defined in <a href="#sec-2-1" class="quarto-xref">Section&nbsp;2.1</a> as destinations, with a 20-minute threshold for walking, cycling and public transport modes. The accessibility considered all the origins and destinations within the study area and provided a deep analysis of the spatial accessibility across Cambridge and a standard mid-weekday in peak hour (08:30), to capture the maximum service frequency available.</p>
+</section>
+<section id="sec-3-2" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-3-2"><span class="header-section-number">3.2</span> Measuring accessibility</h2>
+<p>To measure the accessibility, the <code>r5r::accessibility()</code> function was used to calculate the number of opportunities (POIs) that can be reached within a 20-minute travel time threshold for each mode of transport in Cambridge. The following steps outline the process of calculating the accessibility scores for each mode and preparing the data for further analysis:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate accessibility from the hexagonal grid centroids to the POIs for both walking and PT modes</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>access_transit_r5r <span class="ot">&lt;-</span> <span class="fu">accessibility</span>(</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">r5r_network =</span> r5r_network,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">origins =</span> origins,    <span class="co"># The 100m hex centroids</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">destinations =</span> dest_wide,    <span class="co"># The widened POI table</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="fu">c</span>(<span class="st">"WALK"</span>, <span class="st">"TRANSIT"</span>),</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">opportunities_col =</span> <span class="fu">c</span>(<span class="st">"Education"</span>, <span class="st">"Healthcare"</span>, <span class="st">"Supermarket"</span>, <span class="st">"Leisure"</span>),</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">decay_function =</span> <span class="st">"step"</span>,    <span class="co"># Choose of decay function with AI assistance</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">cutoffs =</span> <span class="dv">20</span>,    <span class="co"># 20-minute analysis</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">departure_datetime =</span> departure_datetime,</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_threads =</span> parallel<span class="sc">::</span><span class="fu">detectCores</span>() <span class="sc">-</span> <span class="dv">1</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The decay function used in the accessibility calculation was the “step” function, which applies a strict cutoff at the defined threshold (for the 20-minute accessibility analysis). Therefore, the accessibility function only considered the opportunities that can be reached within 20 minutes are counted as accessible. This choice was made to align with the 20-minute city concept, which emphasises the importance of having essential opportunities (services and amenities) within a strict time threshold for active travel and public transport modes.</p>
+</section>
+<section id="sec-3-3" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-3-3"><span class="header-section-number">3.3</span> Assumptions for the accessibility index</h2>
+<p>The accessibility scores calculated from the <code>r5r::accessibility()</code> function for each mode and POI type were normalised using a min-max normalisation approach <span class="citation" data-cites="min_max">(<a href="#ref-min_max" role="doc-biblioref">Organisation for Economic Co-operation and Development, 2008</a>)</span> to scale the values between 0 and 1, allowing for a more standard comparison across the different modes and POI types.</p>
+<p><span class="math display">\[
+x_{norm} = \frac{x - x_{min}}{x_{max} - x_{min}}
+\]</span></p>
+<p>This normalisation was defined as a function to be applied to each accessibility score, as detailed in the code chunk below.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a normalisation function to scale the accessibility values between 0 and 1</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>norm <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">max</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">==</span> <span class="fu">min</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="fu">return</span>(<span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">length</span>(x)))</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span> ((x <span class="sc">-</span> <span class="fu">min</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">/</span> (<span class="fu">max</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">-</span> <span class="fu">min</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)))</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>}   <span class="co"># Assisted with AI to handle the case to avoid division by zero</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The normalised accessibility scores for each POI type were then weighted equally (25% for each opportunity) to calculate a final accessibility score for each mode. Although, the weighting of the POI types could be adjusted based on the specific context and relevance of the opportunities <span class="citation" data-cites="büttner2024">(<a href="#ref-büttner2024" role="doc-biblioref">Büttner et al., 2024</a>)</span>, an equal weighting was chosen to reflect the equal importance of access to education, healthcare, amenities, and leisure in the context of a 20-minute active travel city strategy <span class="citation" data-cites="krenn2015 santos2022">(<a href="#ref-krenn2015" role="doc-biblioref">Krenn et al., 2015</a>; <a href="#ref-santos2022" role="doc-biblioref">Santos et al., 2022</a>)</span>. The final accessibility score for each mode was calculated as a composite index.</p>
+<p>Lastly, the accessibility was joined on a master dataset, as defined in the code chunk below, to combine the accessibility scores for all modes into a single dataset for further analysis and visualisation.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine the accessibility scores for all modes into a single dataset</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>access_score <span class="ot">&lt;-</span> transit_score <span class="sc">|&gt;</span> </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(transit_score_30, <span class="at">by =</span> <span class="st">"id"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(walk_score, <span class="at">by =</span> <span class="st">"id"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(cycle_score, <span class="at">by =</span> <span class="st">"id"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="sec-3-4" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-3-4"><span class="header-section-number">3.4</span> Socio-economic aggregation</h2>
+<p>The 100 metres hexagonal grid defined in <a href="#sec-2-2" class="quarto-xref">Section&nbsp;2.2</a> provides the granularity and detail required for the accessibility analysis in Cambridge. However, The socio-economic equity analysis of the transport accessibility across different areas of the city, was defined as the aggregation of the accessibility results for a more meaningful spatial unit, such as the LSOA level. This aggregation was calculated as the mean accessibility score for each cell grid and mode within each LSOA, providing an overview of the accessibility levels experienced by residents in different areas of Cambridge.</p>
+<p>Furthermore, the aggregated accessibility was combined with the socio-economic datasets (IMD and population) at the LSOA level to analyse the behaviour between accessibility and social deprivation. The following steps outline the process of aggregating the accessibility scores to the LSOA level and combining them with the socio-economic data for further analysis detalied in <a href="#sec-results-2" class="quarto-xref">Section&nbsp;5</a>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Aggregate the IMD and population data to the LSOA level and combine with the accessibility scores</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>lsoa_data <span class="ot">&lt;-</span> lsoa_access <span class="sc">|&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(imd_data, <span class="at">by =</span> <span class="st">"LSOA21CD"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(population_data, <span class="at">by =</span> <span class="st">"LSOA21CD"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">!</span><span class="fu">c</span>(FID, LSOA21NM))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+</section>
+<section id="sec-results-1" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Results: Spatial accessibility</h1>
+<p>This section presents the results of the accessibility analysis across Cambridge, focusing on the spatial distribution of accessibility scores for active travel and public transport modes. The results are visualised through maps of the accessibility levels across the study area.</p>
+<section id="sec-4-1" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-4-1"><span class="header-section-number">4.1</span> Active travel accessibility</h2>
+<p>The accessibility analysis for a 20-minute threshold for both active travel and public transport modes show the differences in the spatial distribution across Cambridge. The following figure (see <a href="#fig-access" class="quarto-xref">Figure&nbsp;2</a>) shows the accessibility levels for these two modes. Moreover, the analysis reveals that the city centre of Cambridge has the highest accessibility levels, indifferent from the mode, which is expected given the concentration of opportunities and the radial structure of the public transport network (as shown in <a href="#fig-study-area" class="quarto-xref">Figure&nbsp;1</a>).</p>
+<p>There is also a difference of how the accessibility levels evolves from the urban area to the peri-urban areas of Cambridge. The accessibility levels of public transport show a concentrated pattern only around the city centre, while the accessibility levels for cycling show a more dispersed pattern across the urban area, where the peri-urban areas are still maintaining relatively high accessibility levels compared to the levels from public transport.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-access" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="TRAN5340M_202018013_files/figure-html/fig-access-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: 20-minute accessibility score for cycling and public transport modes across the study area
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Finally, this difference can be attributed to the fact that active travel modes, such as cycling and walking, are less dependent on the spatial distribution of the network and can provide efficient and direct connections to opportunities across the city, only penalised from the topography of the city. On the other hand, public transport accessibility rely on the location of the stops, timetables, routes and the time required to access to the stops and destinations.</p>
+</section>
+<section id="sec-4-2" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-4-2"><span class="header-section-number">4.2</span> Public transport accessibility</h2>
+<p>To fully understand the accessibility levels for the public transport (from the combination of walking and transit modes), an analysis was conducted to compare the 20-minute and 30-minute accessibility scores for public transport mode across the study area. This approach isolates the effect of the time threshold on the public transport accessibility in Cambridge and provides insights into how the accessibility levels evolve when this parameter is modified.</p>
+<p>The following figure (see <a href="#fig-access-pt" class="quarto-xref">Figure&nbsp;3</a>) illustrates the spatial comparison of the accessibility scores for both thresholds, showing how the accessibility levels change when the time threshold is increased.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-access-pt" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-access-pt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="TRAN5340M_202018013_files/figure-html/fig-access-pt-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-access-pt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: 20-minute and 30-minute accessibility score for public transport mode across the study area
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The results indicate that the increase of the time threshold from 20 to 30 minutes significantly increases the accessibility levels across the city, especially in the peripheral areas. This suggests that a 20-minute threshold may be too restrictive for public transport accessibility in Cambridge, and that a more flexible threshold could provide a more accurate representation of the accessibility levels for this mode. Also, the analysis show that even the 30-minute threshold still maintains a significant accessibility gap between the public transport and the cycling modes, which highlights the potential of active travel modes to provide high accessibility levels across the city, even with strict time thresholds.</p>
+</section>
+<section id="sec-4-3" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-4-3"><span class="header-section-number">4.3</span> Identification of inaccessible areas</h2>
+<p>From the previous sections (see <a href="#sec-4-1" class="quarto-xref">Section&nbsp;4.1</a> and <a href="#sec-4-2" class="quarto-xref">Section&nbsp;4.2</a>), it is seen that the accessibility levels for both active travel and public transport modes vary across Cambridge, with areas experiencing high accessibility and a radial pattern of how the accessibility is reduced towards the peri-urban area of the city. To further analyse this variation, an identification of the inaccessible areas for both modes (cycling and public transport) was conducted.</p>
+<p>The inaccessibility areas are defined as the areas that have an accessibility score below a certain threshold (in this case, 25 out of 100) for both modes. This threshold was chosen to identify the areas that have very low accessibility levels and may require targeted interventions to improve accessibility. The following figure (see <a href="#fig-inaccess" class="quarto-xref">Figure&nbsp;4</a>) illustrates the spatial distribution of the inaccessibility areas for both modes.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the disparity between the transit and cycle accessibility levels</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>hex_disparity <span class="ot">&lt;-</span> hex_data <span class="sc">|&gt;</span> </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">disparity =</span> (cycle_score <span class="sc">&gt;=</span> <span class="dv">25</span>) <span class="sc">+</span> (transit_score <span class="sc">&gt;=</span> <span class="dv">25</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-inaccess" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inaccess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="TRAN5340M_202018013_files/figure-html/fig-inaccess-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inaccess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Inaccessibility analysis for the 20-minute threshold for both cycling and public transport modes
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-results-2" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Results: Socio-economic equity</h1>
+<section id="sec-5-1" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-5-1"><span class="header-section-number">5.1</span> Accessibility by deprivation</h2>
+<p>To evaluate the socio-economic impact of the accessibility levels by active travel and public transport in Cambridge, the results from the grid analysis was aggregated to the LSOA level and combined with the socio-economics datasets (the 2025 deprivation level and the 2024 population estimates). This allows for a direct quantification of the impact to the residents of the different deprived areas of the city.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the transport exclusion as having a cycle accessibility score below 25</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>excl_data <span class="ot">&lt;-</span> lsoa_data <span class="sc">|&gt;</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">excluded =</span> <span class="fu">ifelse</span>(cycle_score_lsoa <span class="sc">&lt;</span> <span class="dv">25</span>, Population, <span class="dv">0</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(imd_score) <span class="sc">|&gt;</span> </span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_cycle =</span> <span class="fu">round</span>(<span class="fu">mean</span>(cycle_score_lsoa, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">1</span>),</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_transit =</span> <span class="fu">round</span>(<span class="fu">mean</span>(transit_score_lsoa, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">1</span>),</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_pop =</span> <span class="fu">sum</span>(Population, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">excluded_pop =</span> <span class="fu">sum</span>(excluded, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">percent_excluded =</span> <span class="fu">paste0</span>(<span class="fu">round</span>((excluded_pop <span class="sc">/</span> total_pop) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>), <span class="st">"%"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(imd_score)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>As detailed in the following table (see <a href="#tbl-exclusion" class="quarto-xref">Table&nbsp;1</a>) the cycling accessibility is directly related to the deprivation level (most deprived areas have the lowest accessibility levels, R<sup>2</sup> = 0.3208), while the public transport accessibility does not show a clear relationship with the deprivation level. This suggests that the active travel modes may be more sensitive to socio-economic factors, such as the spatial concentrations of opportunities and the quality of the infrastructure, while public transport accessibility may be influenced by other factors, such as the location of stops, routes and congestion in Cambridge.</p>
+<p>Furthermore, the analysis shows the percentage of the population that is excluded from having a cycle accessibility score above 25 (no access to at least 1 essential opportunity), which is a significant proportion of the population in the most deprived areas.</p>
+<div style="page-break-after: always;"></div>
+<div class="cell" data-tbl-align="center">
+<div id="tbl-exclusion" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-align="center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-exclusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Transport exclusion analysis by IMD deciles
+</figcaption>
+<div aria-describedby="tbl-exclusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="table do-not-create-environment cell caption-top table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;" data-quarto-table-cell-role="th">IMD Decile</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Cycle Score</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Public Transport Score</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Total Population</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Excluded Pop.*</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">% Excluded</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">23.5</td>
+<td style="text-align: center;">11.2</td>
+<td style="text-align: center;">1581</td>
+<td style="text-align: center;">1581</td>
+<td style="text-align: center;">100%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">40.4</td>
+<td style="text-align: center;">22.5</td>
+<td style="text-align: center;">6488</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">39.8</td>
+<td style="text-align: center;">16.1</td>
+<td style="text-align: center;">10452</td>
+<td style="text-align: center;">1540</td>
+<td style="text-align: center;">14.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">46.1</td>
+<td style="text-align: center;">15.8</td>
+<td style="text-align: center;">9459</td>
+<td style="text-align: center;">1513</td>
+<td style="text-align: center;">16%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">55.6</td>
+<td style="text-align: center;">21.7</td>
+<td style="text-align: center;">17305</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">40.6</td>
+<td style="text-align: center;">16.9</td>
+<td style="text-align: center;">24060</td>
+<td style="text-align: center;">4679</td>
+<td style="text-align: center;">19.4%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">57.3</td>
+<td style="text-align: center;">28.1</td>
+<td style="text-align: center;">30368</td>
+<td style="text-align: center;">3233</td>
+<td style="text-align: center;">10.6%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">63.1</td>
+<td style="text-align: center;">23.0</td>
+<td style="text-align: center;">23097</td>
+<td style="text-align: center;">1544</td>
+<td style="text-align: center;">6.7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">36.9</td>
+<td style="text-align: center;">13.3</td>
+<td style="text-align: center;">43147</td>
+<td style="text-align: center;">15631</td>
+<td style="text-align: center;">36.2%</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: center; padding: 0;"><span style="font-style: italic;">Note: </span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center; padding: 0;"><sup></sup> Excluded population was estimated from the Cycle Score by LSOA and aggregated to the deprivation level.</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tfoot>
+
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="sec-5-2" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-5-2"><span class="header-section-number">5.2</span> Evaluating the transport social exclusion</h2>
+<p>The statistical distribution of the accessibility level across the IMD deciles expand the findings from the previous section (see <a href="#sec-5-1" class="quarto-xref">Section&nbsp;5.1</a>) and provide a deeper understanding of the relationship between accessibility and deprivation in Cambridge. The following figure (see <a href="#fig-boxplot" class="quarto-xref">Figure&nbsp;5</a>) illustrates the variation of the socio-economic effect on the accessibility in the city.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="TRAN5340M_202018013_files/figure-html/fig-boxplot-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Distribution of Cycling Accessibility Scores by IMD Decile
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The statistical distribution reveals that lower IMD deciles (more deprived areas) have a lower median accessibility. However, it also reveals that the least deprived area of Cambridge has also a lower accessibility score. This could be attributed to different factors, such as the location and connectivity of the least deprived area and the commute characteristic, such as car focused areas.</p>
+</section>
+</section>
+<section id="sec-discussion" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Discussion and conclusions</h1>
+<section id="sec-6-1" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="sec-6-1"><span class="header-section-number">6.1</span> Synthesis of findings</h2>
+<p><strong>Spatial accessibility (RQ01):</strong> In response to the first research question, the analysis revealed the variation of accessibility levels across Cambridge. While active travel modes, primarily cycling, provide a resilient and efficient mode in the city, public transport accessibility remains limited, especially in the peripheral areas. The 20-minute threshold for public transport may be too restrictive, and a more flexible threshold could provide a more accurate representation of accessibility levels for this mode.</p>
+<p><strong>Spatial exclusion (RQ02):</strong> In response of the second research question, the inaccessible areas of Cambridge were identified, showing that a significant proportion of the population in the peripheral areas is excluded from having access to essential opportunities. Therefore, these areas do not provide an adequate 20-minute accessibility due several factor, such as the spatial distribution of opportunities, the quality of the infrastructure and the location of public transport stops and routes.</p>
+<p><strong>Socio-economic equity (RQ03):</strong> Finally, in response of the third research question, the analysis shows the positive correlation between the cycling accessibility level and the deprivation level, where the most deprived areas have the lowest accessibility levels. Furthermore, it presents a proportion of the estimated population that is excluded or lives near inaccessible areas, demonstrating the socio-economic inequity that Cambridge experience.</p>
+</section>
+<section id="sec-6-2" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="sec-6-2"><span class="header-section-number">6.2</span> Methodological limitations</h2>
+<p>While the approach of this report provides a tool to evaluate the 20-minute accessibility levels in Cambridge, some methodological and data-related limitations must be acknowledged:</p>
+<ul>
+<li><p>The accessibility level was calculated in a hexagonal 100 m grid and was aggregated up to the LSOA level, in order to join the results with the socio-economic variables. In this way, the accessibility level for a single LSOA may cover up a behavioral variation alongside each LSOA, with neighbourhoods with higher accessibility than others within the same LSOA.</p></li>
+<li><p>The decay function used in the <code>r5r</code> package was defined as a 20-minute cutoff to evaluate the accessibility levels for different modes in Cambridge. However, this function may be too strict to evaluate the the accessibility. As a result, opportunities reachable in less than 20 minutes are considered accessible, but if one opportunity is reachable in 21 minutes or in a close range, it is considered inaccessible. It could be worth to analyse the other functions within the package as the <code>r5r::travel_time_matrix()</code> or <code>r5r::isochrones()</code>.</p></li>
+<li><p>The data regarding the public transport system is represented in the GTFS format that represent not only the network system, but the scheduled timetable defined for each route. In this way, the data consider a theoretical scenario and to improve the data reliability, it could be possible to add GPS data (also available at the BODS portal) to represent the delays and congestion of the system in Cambridge <span class="citation" data-cites="braga2023">(<a href="#ref-braga2023" role="doc-biblioref">Braga et al., 2023</a>)</span>.</p></li>
+<li><p>The cycle accessibility level considers the network of Cambridge alongside with the gradient from the topography. However, it lacks to consider the perceived safety and the traffic stress effect that make cyclist decide whether a route is safe and comfortable than other. For a further detailed analysis, it would be recommended to analyse the <code>STATS19</code> accidents data and consider preferred routes of cyclists <span class="citation" data-cites="arellana2020">(<a href="#ref-arellana2020" role="doc-biblioref">Arellana et al., 2020</a>)</span>.</p></li>
+</ul>
+</section>
+<section id="sec-6-3" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="sec-6-3"><span class="header-section-number">6.3</span> Policy recommendations</h2>
+<p>The results presented in the report may have direct implications for transport planning policies and active travel development in Cambridge. As discussed in <a href="#sec-results-1" class="quarto-xref">Section&nbsp;4</a> and <a href="#sec-results-2" class="quarto-xref">Section&nbsp;5</a>, the high accessibility levels are located in the urban city centre, while the peripheral areas (also the deprived areas) suffer from lack of this accessibility. Therefore, local authorities must prioritise to improve the spatial and socio-economic gap identified with data-driven interventions, such as bike share schemes, infrastructure and improvement of the schedules of the public transport network.</p>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="acknowledgements" class="level1 unnumbered">
+<h1 class="unnumbered">Acknowledgements</h1>
+<ul>
+<li><p><strong>Name and Version of the GenAI system:</strong> Secure Copilot GPT-5 and Github Copilot</p></li>
+<li><p><strong>Publisher:</strong> Microsoft</p></li>
+<li><p><strong>URL:</strong> https://copilot.cloud.microsoft (GitHub Copilot on the RStudio Environment)</p></li>
+</ul>
+<p>I acknowledge the use of GenAI as a secondary research and coding assistant through the development of the report. Therefore, the GenAI was used for debugging the R script, optimise the spatial joins logic from the <code>sf</code> package, the configuration of the YAML header of the Quarto file and configuration of the code-chunks labels.</p>
+<p>Moreover, the GenAI served to brainstorm the structure of this report, and to provide some logical ideas for the production of the final figures of the report, within the RStudio environment with Github Copilot. Finally, GenAI was used to proofread and provide recommendations to the final draft of the report.</p>
+</section>
+<section id="reproducibility" class="level1 unnumbered">
+<h1 class="unnumbered">Reproducibility</h1>
+<p>I rendered this document to a PDF file using the standard Quarto rendering process:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system</span>(<span class="st">"quarto install tinytex"</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">"TRAN5340M_202018013.qmd"</span>, <span class="at">output_format =</span> <span class="st">"pdf"</span>,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">output_file =</span> <span class="st">"TRAN5340M_202018013.pdf"</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>I then compiled all necessary files into a compressed folder for submission:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>zip<span class="sc">::</span><span class="fu">zipr</span>(<span class="at">zipfile =</span> <span class="st">"TRAN5340M_202018013.zip"</span>,</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">files =</span> <span class="fu">c</span>(<span class="st">"TRAN5340M_202018013.qmd"</span>,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>              <span class="st">"TRAN5340M_202018013.pdf"</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>              <span class="st">"logo.jpg"</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>              <span class="st">"references.bib"</span>,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>              <span class="st">"harvard-university-of-leeds.csl"</span>,</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>              <span class="st">"coursework_tds.Rproj"</span>,</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>              <span class="st">"data"</span>)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="references" class="level1 unnumbered">
 
 
+</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-arellana2020" class="csl-entry" role="listitem">
+Arellana, J., Saltarín, M., Larrañaga, A.M., González, V.I. and Henao, C.A. 2020. Developing an urban bikeability index for different types of cyclists as a tool to prioritise bicycle infrastructure investments. <em>Transportation Research Part A: Policy and Practice</em>. [Online] <strong>139</strong>, pp.310–334. Available from: <a href="http://dx.doi.org/10.1016/j.tra.2020.07.010">http://dx.doi.org/10.1016/j.tra.2020.07.010</a>.
+</div>
+<div id="ref-braga2023" class="csl-entry" role="listitem">
+Braga, C.K.V., Loureiro, C.F.G. and Pereira, R.H.M. 2023. Evaluating the impact of public transport travel time inaccuracy and variability on socio-spatial inequalities in accessibility. <em>Journal of Transport Geography</em>. [Online] <strong>109</strong>, p.103590. Available from: <a href="http://dx.doi.org/10.1016/j.jtrangeo.2023.103590">http://dx.doi.org/10.1016/j.jtrangeo.2023.103590</a>.
+</div>
+<div id="ref-gtfs_data" class="csl-entry" role="listitem">
+Bus Open Data Service 2026. Download regional and national data sets in GTFS format. Available from: <a href="https://data.bus-data.dft.gov.uk/timetable/download/">https://data.bus-data.dft.gov.uk/timetable/download/</a>.
+</div>
+<div id="ref-büttner2024" class="csl-entry" role="listitem">
+Büttner, B., Silva, C., Merlin, L. and Geurs, K. 2024. Just around the corner: Accessibility by proximity in the 15-minute city. <em>Journal of Urban Mobility</em>. [Online] <strong>6</strong>, p.100095. Available from: <a href="http://dx.doi.org/10.1016/j.urbmob.2024.100095">http://dx.doi.org/10.1016/j.urbmob.2024.100095</a>.
+</div>
+<div id="ref-cambridgeshire_strategy" class="csl-entry" role="listitem">
+Cambridgeshire County Council 2023. Cambridgeshire’s active travel strategy. Available from: <a href="https://www.cambridgeshire.gov.uk/residents/travel-roads-and-parking/transport-plans-and-policies/cambridgeshires-active-travel-strategy">https://www.cambridgeshire.gov.uk/residents/travel-roads-and-parking/transport-plans-and-policies/cambridgeshires-active-travel-strategy</a>.
+</div>
+<div id="ref-cervero1997" class="csl-entry" role="listitem">
+Cervero, R. and Kockelman, K. 1997. Travel demand and the 3Ds: Density, diversity, and design. <em>Transportation Research Part D: Transport and Environment</em>. [Online] <strong>2</strong>(3), pp.199–219. Available from: <a href="http://dx.doi.org/10.1016/S1361-9209(97)00009-6">http://dx.doi.org/10.1016/S1361-9209(97)00009-6</a>.
+</div>
+<div id="ref-osmextract" class="csl-entry" role="listitem">
+Gilardi, A. and Lovelace, R. 2025. Osmextract: Download and import open street map data extracts. Available from: <a href="https://CRAN.R-project.org/package=osmextract">https://CRAN.R-project.org/package=osmextract</a>.
+</div>
+<div id="ref-elevatr" class="csl-entry" role="listitem">
+Hollister, J., Shah, T., Nowosad, J., Robitaille, A.L., Beck, M.W. and Johnson, M. 2025. Elevatr: Access elevation data from various APIs. Available from: <a href="https://github.com/usepa/elevatr/">https://github.com/usepa/elevatr/</a>.
+</div>
+<div id="ref-krenn2015" class="csl-entry" role="listitem">
+Krenn, P.J., Oja, P. and Titze, S. 2015. Development of a bikeability index to assess the bicycle-friendliness of urban environments. <em>Open Journal of Civil Engineering</em>. [Online] <strong>05</strong>(04), pp.451–459. Available from: <a href="http://dx.doi.org/10.4236/ojce.2015.54045">http://dx.doi.org/10.4236/ojce.2015.54045</a>.
+</div>
+<div id="ref-imd_data" class="csl-entry" role="listitem">
+Ministry of Housing Communities and Local Government 2025. English indices of deprivation 2025. Available from: <a href="https://www.gov.uk/government/statistics/english-indices-of-deprivation-2025">https://www.gov.uk/government/statistics/english-indices-of-deprivation-2025</a>.
+</div>
+<div id="ref-moreno2021" class="csl-entry" role="listitem">
+Moreno, C., Allam, Z., Chabaud, D., Gall, C. and Pratlong, F. 2021. Introducing the <span>“</span>15-Minute City<span>”</span>: Sustainability, Resilience and Place Identity in Future Post-Pandemic Cities. <em>Smart Cities</em>. [Online] <strong>4</strong>(1), pp.93–111. Available from: <a href="http://dx.doi.org/10.3390/smartcities4010006">http://dx.doi.org/10.3390/smartcities4010006</a>.
+</div>
+<div id="ref-population_data" class="csl-entry" role="listitem">
+Office for National Statistics 2025. Lower layer super output area population estimates. Available from: <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/lowersuperoutputareamidyearpopulationestimates">https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/lowersuperoutputareamidyearpopulationestimates</a>.
+</div>
+<div id="ref-lsoaboundaries" class="csl-entry" role="listitem">
+Office for National Statistics 2024. Lower layer super output areas (december 2021) boundaries. Available from: <a href="https://geoportal.statistics.gov.uk/datasets/ons::lower-layer-super-output-areas-december-2021-boundaries-ew-bsc-v4-2/about">https://geoportal.statistics.gov.uk/datasets/ons::lower-layer-super-output-areas-december-2021-boundaries-ew-bsc-v4-2/about</a>.
+</div>
+<div id="ref-min_max" class="csl-entry" role="listitem">
+Organisation for Economic Co-operation and Development 2008. Handbook on constructing composite indicators: Methodology and user guide. Available from: <a href="https://doi.org/10.1787/9789264043466-en">https://doi.org/10.1787/9789264043466-en</a>.
+</div>
+<div id="ref-arcgislayers" class="csl-entry" role="listitem">
+Parry, J. 2026. <span class="nocase">arcgislayers: Harness ArcGIS Data Services</span>. Available from: <a href="https://CRAN.R-project.org/package=arcgislayers">https://CRAN.R-project.org/package=arcgislayers</a>.
+</div>
+<div id="ref-pereira2021a" class="csl-entry" role="listitem">
+Pereira, R.H.M., Saraiva, M., Herszenhut, D., Braga, C.K.V. and Conway, M.W. 2021. r5r: Rapid Realistic Routing on Multimodal Transport Networks with R<span><sup>5</sup></span> in R. <em>Findings</em>. [Online]. Available from: <a href="http://dx.doi.org/10.32866/001c.21262">http://dx.doi.org/10.32866/001c.21262</a>.
+</div>
+<div id="ref-tidytransit" class="csl-entry" role="listitem">
+Poletti, F., Herszenhut, D., Padgham, M., Buckley, T. and Noriega-Goodwin, D. 2026. Tidytransit: Read, validate, analyze, and map GTFS feeds. Available from: <a href="https://CRAN.R-project.org/package=tidytransit">https://CRAN.R-project.org/package=tidytransit</a>.
+</div>
+<div id="ref-santos2022" class="csl-entry" role="listitem">
+Santos, B., Passos, S., Gonçalves, J. and Matias, I. 2022. Spatial Multi-Criteria Analysis for Road Segment Cycling Suitability Assessment. <em>Sustainability</em>. [Online] <strong>14</strong>(16), p.9928. Available from: <a href="http://dx.doi.org/10.3390/su14169928">http://dx.doi.org/10.3390/su14169928</a>.
+</div>
+<div id="ref-tfl_ptal" class="csl-entry" role="listitem">
+Transport for London 2015. Assessing transport connectivity in london. Available from: <a href="https://content.tfl.gov.uk/connectivity-assessment-guide.pdf">https://content.tfl.gov.uk/connectivity-assessment-guide.pdf</a>.
+</div>
+</div></section></div></main>
+<!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
