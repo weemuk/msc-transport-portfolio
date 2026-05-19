@@ -10,12 +10,12 @@ This repository contains the executive summaries and analysis from the modules f
 
 ### Transport Data Science
 
-[Cambridge 20-Minute City Accessibility Analysis](tds.html)
+[Cambridge 20-Minute City Accessibility Analysis](data-science/tds.html)
 
 ### Sustainable Spatial Planning and Analysis
 
-[Bikeability Index of Lima](sspa.html)
+[Bikeability Index of Lima](spatial-analysis/sspa.html)
 
 ### Shaping Future Transport Systems
 
-[Shared Micromobility: Challenges and Opportunities](shaping.html)
+[Shared Micromobility: Challenges and Opportunities](shaping/shaping.html)
