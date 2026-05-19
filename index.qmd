@@ -1,10 +1,8 @@
 ---
-title: "MSc Transport Planning and the Environment Portfolio"
+title: "Transport Planning"
 ---
 
-# MSc Transport Planning and the Environment
-
-This repository contains the executive summaries and analysis from the modules from the MSc.
+This repository contains the executive summaries and analysis from the modules from the MSc Transport Planning and the Environment.
 
 ##  Module Index
 
