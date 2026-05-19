@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "MSc Transport Planning and Environment Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - menu:
+          - text: "Shaping Future Transport Systems"
+            href: shaping/shaping.qmd
+          - text: "Transport Data Science"
+            href: data-science/TDS.qmd
+          - text: "Sustainable Spatial Planning and Analysis"
+            href: spatial-planning/sspa.qmd
+
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true
