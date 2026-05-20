@@ -31,7 +31,7 @@ Abridged Variable Classification Framework:
 
 The resulting index reveals that optimal cycling conditions, defined as scores between 6 and 8, are heavily concentrated in the flat, well-connected 'Centric Lima' area. Conversely, urban peripheries present highly unfavorable environments for active travel modes due to moderate slopes and arterial road traffic.
 
-![Figure 3: Bikeability Index of the Metropolitan Area of Lima ](images/figure-3.png){fig-align="center"}
+![Figure 3: Bikeability Index of the Metropolitan Area of Lima](images/figure-3.png){fig-align="center"}
 
 By integrating 2021 population data, the severity of this inequity becomes quantifiable.
 

@@ -12,9 +12,9 @@ website:
           - text: "Shaping Future Transport Systems"
             href: shaping/shaping.qmd
           - text: "Transport Data Science"
-            href: data-science/TDS.qmd
+            href: data-science/tds.qmd
           - text: "Sustainable Spatial Planning and Analysis"
-            href: spatial-planning/sspa.qmd
+            href: spatial-analysis/sspa.qmd
 
 
 format:
