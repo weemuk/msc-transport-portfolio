@@ -23,7 +23,8 @@ endure a lack of infrastructure, steep topography, and high traffic
 stress. This report develops a Bikeability Index to quantify this
 inequity and evaluate proposed municipal cycling projects.
 
-![Figure 1:](images/figure-1.png){fig-align="center"}
+![Figure 1: Study Area - Metropolitan Area of
+Lima](images/figure-1.png){fig-align="center"}
 
 # Methodology
 
@@ -39,7 +40,9 @@ indicates high bikeability) based on statistical deciles.
 
 Abridged Variable Classification Framework:
 
-![Figure 2:](images/figure-2.png){fig-align="center"}
+![Figure 2: Classification of the 5 variables in deciles (1: low
+bikeability, 10: high
+bikeability)](images/figure-2.png){fig-align="center"}
 
 # Key Findings: The Socio-Spatial Gap
 
@@ -49,7 +52,8 @@ well-connected 'Centric Lima' area. Conversely, urban peripheries
 present highly unfavorable environments for active travel modes due to
 moderate slopes and arterial road traffic.
 
-![Figure 3:](images/figure-3.png){fig-align="center"}
+![Figure 3: Bikeability Index of the Metropolitan Area of Lima
+](images/figure-3.png){fig-align="center"}
 
 By integrating 2021 population data, the severity of this inequity
 becomes quantifiable.
