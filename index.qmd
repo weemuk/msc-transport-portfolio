@@ -1,19 +1,23 @@
 ---
-title: "Transport Planning"
+title: "MSc Transport Planning and the Environment"
 ---
 
-This repository contains the executive summaries and analysis from the modules from the MSc Transport Planning and the Environment.
+This repository contains the executive summaries and analysis of some modules from the MSc Transport Planning and the Environment at the University of Leeds.
 
-##  Module Index
+#  Module Index
 
-### Transport Data Science
+## Transport Data Science
 
 [Cambridge 20-Minute City Accessibility Analysis](data-science/tds.html)
 
-### Sustainable Spatial Planning and Analysis
+## Sustainable Spatial Planning and Analysis
 
 [Bikeability Index of Lima](spatial-analysis/sspa.html)
 
-### Shaping Future Transport Systems
+## Shaping Future Transport Systems
 
 [Shared Micromobility: Challenges and Opportunities](shaping/shaping.html)
+
+## Air Quality Policy Design and Evaluation
+
+[Air Quality Analysis in Edinburgh](air-quality/aq.html)
