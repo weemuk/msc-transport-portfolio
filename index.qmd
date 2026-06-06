@@ -4,6 +4,10 @@ title: "MSc Transport Planning and the Environment"
 
 This repository contains the executive summaries and analysis of some modules from the MSc Transport Planning and the Environment at the University of Leeds.
 
+# Curriculum Vitae
+
+[English version (.pdf)](cv/cv_German_EN.pdf) | [Versión en español (.pdf)](cv/cv_German_ES.pdf)
+
 #  Module Index
 
 ## Transport Data Science

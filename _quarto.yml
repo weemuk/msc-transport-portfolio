@@ -9,6 +9,10 @@ website:
       - href: index.qmd
         text: Home
       - menu:
+          - text: "CV English version"
+            href: cv/cv_German_EN.pdf
+          - text: "CV Versión en español"
+            href: cv/cv_German_ES.pdf
           - text: "Shaping Future Transport Systems"
             href: shaping/shaping.qmd
           - text: "Transport Data Science"
