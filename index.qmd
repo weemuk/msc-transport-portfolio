@@ -20,4 +20,4 @@ This repository contains the executive summaries and analysis of some modules fr
 
 ## Air Quality Policy Design and Evaluation
 
-[Air Quality Analysis in Edinburgh](air-quality/aq.html)
+[Air Quality Analysis in Edinburgh](air-quality/AQ.html)
